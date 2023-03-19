@@ -2,6 +2,7 @@
 
 import 'package:fcontact_app/ui/contact_list/contact_list_screen.dart';
 import 'package:fcontact_app/ui/contact_list/model/contact_model.dart';
+import 'package:fcontact_app/ui/create_contact_page/create_contact_page.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blueGrey,
         ),
-        home: ContactListScreen(),
+        home: const CreateContactPage(),
       ),
     );
   }
