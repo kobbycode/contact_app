@@ -13,6 +13,15 @@ class ContactsModel extends Model {
 
   List<Contact> get contact => _contact;
 
+  void addContact(Contact contact) {
+    // ignore: avoid_print
+    print(_contact.length);
+    _contact.add(contact);
+    // ignore: avoid_print
+    print(_contact.length);
+    notifyListeners();
+  }
+
   void changeFavoriteStatus(int index) {
     _contact[index].isFavorite = !_contact[index].isFavorite;
     sortContacts();
