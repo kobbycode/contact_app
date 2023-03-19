@@ -10,19 +10,6 @@ class ContactListScreen extends StatefulWidget {
 }
 
 class _ContactListScreenState extends State<ContactListScreen> {
-  // late final List<Contact> _contact;
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _contact = List.generate(50, (index) {
-  //     return Contact(
-  //       name: '${faker.person.firstName()} ${faker.person.firstName()}',
-  //       phoneNumber: faker.randomGenerator.integer(1000000).toString(),
-  //       email: faker.internet.freeEmail(),
-  //     );
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
